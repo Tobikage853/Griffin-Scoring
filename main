@@ -1,0 +1,29 @@
+Pseudocode
+Algorithm Griffin Scoring
+
+Input N          // number of items
+Input M          // number of criteria
+
+For j = 1 to M
+    Input weight[j]
+End For
+
+For i = 1 to N
+    Input item[i].name
+    totalScore = 0
+
+    For j = 1 to M
+        Input score
+        totalScore = totalScore + score * weight[j]
+    End For
+
+    item[i].score = totalScore
+End For
+
+Sort items by score in descending order
+
+For i = 1 to N
+    Print item[i].name, item[i].score
+End For
+
+End Algorithm
